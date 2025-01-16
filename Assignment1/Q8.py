@@ -11,7 +11,7 @@ try:
     n2 = int(input("enter the denominator: "))
     division= n1 / n2
     print("Result of division:", division)
-except divisionbyzeroerror:
+except ZeroDivisionError:
     print("Error: Division by zero is not allowed.")
 
 
@@ -21,7 +21,7 @@ except divisionbyzeroerror:
 try:
     number = int(input("Enter the number: "))
     print("entered the number", number)
-except invalidinput:
+except ValueError:
     print("Error: Invalid input")
   finally:
     print("Execution of the program is completed")
